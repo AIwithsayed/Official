@@ -85,3 +85,29 @@ if (mobileMenuBtn) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Make navbar list items clickable
+    const navItems = document.querySelectorAll('nav ul li');
+    
+    navItems.forEach(item => {
+        const link = item.querySelector('a');
+        if (link) {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function() {
+                window.location.href = link.href;
+            });
+        }
+    });
+
+    // Optional: Add hover effect to show interactivity
+    navItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = 'transparent';
+        });
+    });
+});
