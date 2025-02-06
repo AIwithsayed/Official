@@ -458,6 +458,24 @@ nav .container {
     background-color: var(--secondary-color);
 }
 
+/* About Page Button */
+.btn-about {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-about:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer */
 footer {
     background-color: var(--secondary-color);

@@ -33,6 +33,10 @@
     position: relative;
     border-radius: 15px;
     overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    height: 600px;
+    margin: 0 auto;
 }
 
 .story-image img {
@@ -299,6 +303,10 @@ blockquote cite {
     .achievements-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .story-image {
+        max-width: 600px;
+        height: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -311,16 +319,9 @@ blockquote cite {
     }
 
     .story-image {
-        height: 450px; /* Increased height for mobile */
-        width: 100%;
-        max-width: 600px; /* Increased max-width */
+        height: 450px;
+        max-width: 600px;
         margin: 0 auto;
-    }
-
-    .story-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .hero-content h1 {
