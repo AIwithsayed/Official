@@ -1,0 +1,287 @@
+/* Notes Page Styling */
+.notes-hero {
+    background: linear-gradient(135deg, #f4f9ff 0%, #e6f2ff 100%);
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.notes-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.notes-hero h1 {
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.notes-hero p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.resource-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.standards-grid,
+.exams-grid,
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.standard-card,
+.exam-card,
+.tip-card {
+    background-color: var(--light-bg);
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.standard-card:hover,
+.exam-card:hover,
+.tip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.standard-icon,
+.exam-icon,
+.tip-icon {
+    margin-bottom: 20px;
+}
+
+.standard-icon i,
+.exam-icon i,
+.tip-icon i {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+.standard-card h3,
+.exam-card h3,
+.tip-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.standard-levels,
+.exam-resources {
+    margin-top: 20px;
+}
+
+.level-btn,
+.resource-btn,
+.tip-btn {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.level-btn:hover,
+.resource-btn:hover,
+.tip-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.notes-cta {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.notes-cta h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.notes-cta p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover::before {
+    left: 0;
+}
+
+.learn-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+.learn-more-btn:hover {
+    background-color: var(--primary-color-dark, #1a5f7a);
+    transform: translateY(-5px);
+}
+
+.previous-papers-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px solid var(--secondary-color);
+}
+
+.previous-papers-btn:hover {
+    background-color: var(--secondary-color-dark, #2c3e50);
+    transform: translateY(-5px);
+}
+
+.mock-test-btn {
+    background-color: var(--accent-color, #4CAF50);
+    color: white;
+    border: 2px solid var(--accent-color, #4CAF50);
+}
+
+.mock-test-btn:hover {
+    background-color: var(--accent-color-dark, #45a049);
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .standards-grid,
+    .exams-grid,
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .notes-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .quick-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .standards-grid,
+    .exams-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .action-btn {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}

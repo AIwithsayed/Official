@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasim Sir's Tutorial Classes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/success-stories.css">
+    <style>
+        .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    transition: 0.3s;
+}
+
+/* Show menu button on mobile */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Wasim Sir's Tutorial</div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-scroll="true">Home</a></li>
+                <li><a href="#courses" class="nav-link" data-scroll="true">Courses</a></li>
+                <li><a href="pages/courses.html" class="nav-link">All Courses</a></li>
+                <li><a href="#about" class="nav-link" data-scroll="true">About</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#success-stories" class="nav-link" data-scroll="true">Success Stories</a></li>
+                <li><a href="pages/notes.html" class="nav-link" data-scroll="true">Notes</a></li>
+                <li><a href="pages/faq.html" class="nav-link">FAQs</a></li>
+                <li><a href="pages/feedback.html" class="nav-link">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Excellence in Education</h1>
+            <p>Preparing students for NEET, JEE & 10th Standard with personalized attention</p>
+            <a href="#courses" class="cta-button">Explore Courses</a>
+        </div>
+    </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn from experienced educators</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Small Batches</h3>
+                    <p>Personalized attention guaranteed</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Comprehensive Study</h3>
+                    <p>Well-structured curriculum</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Track Progress</h3>
+                    <p>Regular assessments & feedback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>NEET Preparation</h3>
+                    <p>Comprehensive preparation for medical entrance examinations</p>
+                </div>
+                <div class="course-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>JEE Preparation</h3>
+                    <p>Expert guidance for engineering entrance examinations</p>
+                </div>
+                <div class="course-card">
+                    <i class="fas fa-book"></i>
+                    <h3>10th Standard</h3>
+                    <p>Strong foundation for board examinations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Wasim Sir</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/wasim sir.jpg" alt="Wasim Sir" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <p>With years of teaching experience, Wasim Sir is dedicated to helping students achieve their academic goals. His unique teaching methodology and personal attention to each student has helped numerous students succeed in their examinations.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Experienced Faculty</li>
+                        <li><i class="fas fa-check"></i> Personal Attention</li>
+                        <li><i class="fas fa-check"></i> Regular Practice Tests</li>
+                        <li><i class="fas fa-check"></i> Doubt Clearing Sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Student Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="story-card main-story">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <img src="img/sameer-get-633-in-neet-acheivement.jpg" alt="Sameer Khan" class="story-image">
+                    <div class="story-content">
+                        <h3>Sameer Khan - NEET Topper</h3>
+                        <div class="student-details">NEET Aspirant, 2023</div>
+                        <div class="achievement"><span>633 in NEET</span></div>
+                        <p>My journey with Wasim Sir's Tutorials was transformative. Their comprehensive coaching, personalized guidance, and strategic approach helped me achieve an exceptional score of 633 in NEET. The dedicated faculty, rigorous study materials, and motivational support were instrumental in turning my medical dream into reality.</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories" class="success-stories">
+        <div class="container">
+            <h2>Student Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <img src="img/student1-avatar.png" alt="Priya Sharma" class="story-image">
+                    <div class="story-content">
+                        <h3>Priya Sharma</h3>
+                        <div class="student-details">NEET Aspirant, 2023</div>
+                        <div class="achievement"><span>AIR 52 in NEET</span></div>
+                        <p>Wasim Sir's tutorials transformed my approach to studying. The personalized guidance and strategic teaching methods helped me overcome my weaknesses and achieve my dream of becoming a doctor.</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <img src="img/student2-avatar.png" alt="Rohit Kumar" class="story-image">
+                    <div class="story-content">
+                        <h3>Rohit Kumar</h3>
+                        <div class="student-details">JEE Advanced Aspirant, 2023</div>
+                        <div class="achievement"><span>IIT Bombay - Computer Science</span></div>
+                        <p>The comprehensive study materials and doubt-clearing sessions at Wasim Sir's Tutorials were instrumental in my JEE preparation. Their unique teaching methodology made complex concepts simple and engaging.</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <img src="img/student3-avatar.png" alt="Anjali Reddy" class="story-image">
+                    <div class="story-content">
+                        <h3>Sajjad Husain</h3>
+                        <div class="student-details">10th Standard Topper, 2023</div>
+                        <div class="achievement"><span>State Board First Rank</span></div>
+                        <p>Wasim Sir's personalized attention and motivational teaching style helped me build confidence and excel in my studies. Their holistic approach goes beyond just academics.</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Call us for enquiry</p>
+                        <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email us your queries</p>
+                        <a href="mailto:contact@wasimsirtutorial.com">contact@wasimsirtutorial.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <p>Visit our center</p>
+                        <address>Tutorial Center Address, City, State, PIN</address>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    <select required>
+                        <option value="">Select Course</option>
+                        <option value="neet">NEET</option>
+                        <option value="jee">JEE</option>
+                        <option value="10th">10th Standard</option>
+                    </select>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="pages/courses.html">Courses</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 XXXXXXXXXX</li>
+                    <li><i class="fas fa-envelope"></i> info@wasimsirtutorials.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Your Location, City, State</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wasim Sir's Tutorials. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
